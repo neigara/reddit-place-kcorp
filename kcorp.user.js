@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Reddit Place - Armée de Kameto
+// @name         Reddit Place - Armée de Baleines
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  On va récuperer ce qui nous est du de droit.
-// @author       Adcoss95
+// @author       Adcoss95+baleineaux
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://styles.redditmedia.com/t5_4eiiz1/styles/communityIcon_ojy24r8j90o81.jpg
 // @grant        none
@@ -13,7 +13,7 @@ if (window.top !== window.self) {
             document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
         (function () {
             const i = document.createElement("img");
-            i.src = "https://github.com/CorentinGC/reddit-place-kcorp/raw/main/overlay.png";
+            i.src = "https://raw.githubusercontent.com/Loyyyso/reddit-place-kcorp/main/overlay.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
             console.log(i);
             document.addEventListener("keydown", function(event) {
